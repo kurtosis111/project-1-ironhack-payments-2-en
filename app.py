@@ -2,10 +2,6 @@ import pandas as pd
 import dash
 from dash import dcc, html, Input, Output
 import plotly.express as px
-
-import os 
-print(os.getcwd())
-
 from src.data_loader import load_data
 from src.metrics import calc_metric
 

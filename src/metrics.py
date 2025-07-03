@@ -1,6 +1,12 @@
 import pandas as pd
+import os
 import sys
-sys.path.append(r'/Users/Sigrid/Desktop/DSML/projects/project-1-ironhack-payments-2-en')
+current_dir = os.path.dirname(os.path.abspath(__file__))
+if current_dir.endswith('src'):
+    parent_path = os.path.dirname(current_dir)
+else:
+    parent_path = current_dir
+sys.path.append(parent_path)
 from src.data_loader import load_data
 
 def calc_metric():

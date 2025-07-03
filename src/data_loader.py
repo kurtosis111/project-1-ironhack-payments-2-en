@@ -1,6 +1,5 @@
 import pandas as pd
-
-data_path = r'/Users/Sigrid/Desktop/DSML/projects/project-1-ironhack-payments-2-en/project_dataset'
+import os
 
 def read_file(file_name, file_type):
     """
@@ -10,6 +9,13 @@ def read_file(file_name, file_type):
     :file_type: Type of the file ('csv' or 'excel')
     :return: DataFrame containing the data from the CSV file
     """
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    if current_dir.endswith('src'):
+        parent_path = os.path.dirname(current_dir)
+    else:
+        parent_path = current_dir
+    data_path = os.path.join(parent_path, 'project_dataset')
+
     try:
         if file_type == 'csv':
             file_path = f"{data_path}/{file_name}.csv"
