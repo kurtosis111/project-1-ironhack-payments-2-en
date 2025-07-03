@@ -99,3 +99,4 @@ fig.show()
 fig = px.scatter(num_df, x = "outstanding_days", y = "total_amount", color = "month")
 fig.show()
 # could not fine a relationship among these variables
+# %%

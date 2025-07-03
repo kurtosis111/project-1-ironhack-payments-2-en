@@ -1,6 +1,6 @@
 import pandas as pd
 
-data_path = '../project_dataset'
+data_path = r'/Users/Sigrid/Desktop/DSML/projects/project-1-ironhack-payments-2-en/project_dataset'
 
 def read_file(file_name, file_type):
     """

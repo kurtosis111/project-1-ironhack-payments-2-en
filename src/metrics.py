@@ -1,5 +1,7 @@
 import pandas as pd
-from data_loader import load_data
+import sys
+sys.path.append(r'/Users/Sigrid/Desktop/DSML/projects/project-1-ironhack-payments-2-en')
+from src.data_loader import load_data
 
 def calc_metric():
     """
